@@ -3,7 +3,7 @@
 /* mixins, variables, etc. */
 $gray: #555;
 $gray-darker: #222;
-$light-gray: #777;
+$gray-lighter: #777;
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
@@ -51,7 +51,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $light-gray;
+  color: $gray-lighter;
 }
 
 p {
@@ -70,7 +70,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: $light-gray;
+    color: $gray-lighter;
     text-decoration: none;
   }
 }
@@ -81,7 +81,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
-  color: $light-gray;
+  color: $gray-lighter;
   a {
     color: $gray;
     &:hover {
@@ -189,6 +189,19 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 // img {
 //   display: none;
 // }
